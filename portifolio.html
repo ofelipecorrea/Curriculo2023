@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/portifolio.css">
+    <title>Felipe Corrêa</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <button class="cabecalho__menu" aria-label="Menu"><i></i></button>
+        <a href="index.html">
+            <img src="assets/img/logo.png" alt="Logotipo_da_HZC" class="cabecalho__logo">
+        </a>
+        <button class="cabecalho__notificacao" onclick="alternarModo()" aria-label="Notificação"><i></i></button>
+    </header>
+
+    <nav class="menu-lateral">
+        <a href="index.html" class="menu-lateral__link menu-lateral__link--inicio"> Inicio</a>
+        <a href="felipe.html" class="menu-lateral__link menu-lateral__link--quemefelipe">Quem é Felipe Corrêa</a>
+        <a href="cursos.html" class="menu-lateral__link menu-lateral__link--cursos ">Cursos</a>
+        <a href="portifolio.html" class="menu-lateral__link menu-lateral__link--portifolio menu-lateral__link--ativo">Portifólio</a>
+        <a href="contato.html" class="menu-lateral__link menu-lateral__link--contato">Contato</a>
+    </nav>
+    <main class="principal">
+        <h2 class="titulo-pagina">Portifólio</h2>
+        <article class="cartao cartao--destaque">
+            <img src="assets/img/portifolio1.jpg" alt="certificado1" class="felipeimagem">
+            <div class="cartao__conteudo">
+                <p class="cartao__destaque">Felipe Corrêa</p>
+                <h3 class="cartao__titulo1">Com estudos em relação a melhorias de tempo em respostas referente a criação de cotação em produtos, resolvi fazer um portfólio online, aonde o cliente terá acesso com todo auxílio de responsividade e simplicidade, nas buscas pelos produtos necessários. Nele o cliente poderá selecionar o objeto necessário e informar a quantidade necessária para o seu pedido, sabendo o valor do produto no atacado. Com este projeto, reduziremos para 0 o tempo de resposta entre um e-mail enviado solicitando a cotação dos produtos. Funcionará como um e-commerce, cliente seleciona os produtos, quantidade e informa o método de envio, e irá gerar um QR code para empresa, utilizando API do estoque disponível.
+                    <hr>
+                </h3>
+                <h3 class="cartao__titulo">With studies regarding time improvements in responses regarding the creation of product quotations, I decided to create an online portfolio, where the customer will have access with all the help of responsiveness and simplicity, in the searches for the necessary products. In it, the customer will be able to select the necessary object and inform the quantity necessary for his order, knowing the value of the product in wholesale. With this project, we will reduce to 0 the response time between an email sent requesting a quotation for the products. It will work as an e-commerce, the customer selects the products, quantity and informs the shipping method, and will generate a QR code for the company, using the available stock API.
+                </h3>
+            </div>
+        </article>
+        <a href="https://ofelipecorrea.github.io/RepositorioAtualizado/index.html">
+        <section class="button">
+            <button class="cartao__botao cartao__botao--play cartao__botao--destaque">Veja o Projeto / View my project</button>
+        </section></a>
+        <section class="secao">
+        <a href="contato.html">
+        <section class="button">
+            <button class="cartao__botao cartao__botao--play2 cartao__botao--destaque">Entre em Contato / Get in touch</button>
+        </section></a>
+        <section class="secao">
+            <h3 class="titulo-secao">Copyrighted - Felipe Corrêa</h3>
+        </section>
+    </main>
+    <script src="index.js"></script>
+    <script src="modo.js"></script>
+</body>
+
+</html>
