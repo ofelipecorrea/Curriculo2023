@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Mulish:wght@200&family=Roboto&display=swap');
+
+:root {
+    --cor-fonte-branca: #FFF;
+    --cor-fonte-rosa: #F284EE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: #191A2C;
+}
+
+.header, .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+}
+
+.name, .name1 {
+    font-family: 'Roboto', sans-serif;
+    color: var(--cor-fonte-rosa);
+    font-weight: bold;
+    padding: 0.1rem;
+    font-size: 15px;
+    margin-top: 2rem;
+}
+
+.name1 {
+    color: var(--cor-fonte-branca);
+}
+
+.menu {
+    padding-top: 1rem;
+    height: 50px;
+}
+
+.circle1 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #00A0D2;
+    filter: blur(100px);
+    border-radius: 50%;
+}
+
+.circle2 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: var(--cor-fonte-rosa);
+    filter: blur(100px);
+    border-radius: 50%;
+}
+
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.textotitulo {
+    font-family: 'Manrope', sans-serif;
+    color: var(--cor-fonte-branca);
+    font-size: 35px;
+}
+
+.textotitulo1 {
+    font-family: 'Manrope', sans-serif;
+    color: var(--cor-fonte-rosa);
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.efeito1 {
+    width: 100vw;
+    height: 400px;
+}
+
+.button {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.fa, .Lets {
+    background-color: var(--cor-fonte-rosa);
+    padding: 0.7rem;
+    border-radius: 110px;
+    justify-content: center;
+}
+
+.fa {
+    color: var(--cor-fonte-branca);
+    margin-top: 0.2rem;
+}
+
+.Lets {
+    font-family: 'Mulish', sans-serif;
+    color: var(--cor-fonte-branca);
+
+}
