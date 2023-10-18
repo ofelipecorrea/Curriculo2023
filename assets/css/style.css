@@ -44,6 +44,14 @@ body {
     height: 50px;
 }
 
+.iconmenu {
+    transition: transform 2s;
+}
+
+.rotate {
+    transform: rotate(90deg);
+}
+
 .circle1 {
     position: absolute;
     width: 100px;
