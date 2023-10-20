@@ -13,7 +13,6 @@ $(document).ready(function() {
         Menu.body.toggleClass('menu--closed');
         Menu.body.toggleClass('menu--open');
         Menu.tools.toggleClass('tools--visible');
-        Menu.tools.toggleClass('tools--hidden');
     });
 
 
