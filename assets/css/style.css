@@ -3,16 +3,24 @@
 :root {
     --cor-fonte-branca: #FFF;
     --cor-fonte-rosa: #F284EE;
+    --cor-rental-header: #110e0d;
+    --cor-rental-off-white: #fffff9;
 }
 
 * {
     margin: 0;
     padding: 0;
     border: 0;
+    overflow-x: hidden;
 }
 
-body {
+.Inicio {
     background-color: #191A2C;
+}
+
+.Inicio.light {
+    background-color: #FFFFF9;
+    color: #000;
 }
 
 .header, .menu {
@@ -75,7 +83,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-top: 3rem;
+    padding-top: 2rem;
 }
 
 .textotitulo {
@@ -92,30 +100,137 @@ body {
 }
 
 .efeito1 {
+    margin: 3rem 0 1rem 0rem;
     width: 100vw;
-    height: 400px;
 }
 
 .button {
     display: flex;
     gap: 1rem;
     justify-content: center;
-}
-
-.fa, .Lets {
-    background-color: var(--cor-fonte-rosa);
-    padding: 0.7rem;
-    border-radius: 110px;
-    justify-content: center;
-}
-
-.fa {
-    color: var(--cor-fonte-branca);
-    margin-top: 0.2rem;
+    padding-bottom: 100rem;
 }
 
 .Lets {
+    background-color: var(--cor-fonte-rosa);
+    padding: 1.5rem;
+    width: 7rem;
+    border-radius: 110px;
+    justify-content: center;
+    text-align: center;
     font-family: 'Mulish', sans-serif;
-    color: var(--cor-fonte-branca);
+    font-weight: bold;
+}
 
+.buttonhover:hover {
+    background-color: #00A0D2;
+}
+
+
+.rental {
+    background-color: var(--cor-rental-header);
+}
+
+.headerrental {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.menurental1 {
+    color: var(--cor-fonte-branca);
+    font-family: 'Roboto', sans-serif;
+}
+
+.menurental2 {
+    display: flex;
+    gap: 2rem;
+
+}
+
+.menurental2 p {
+    color: var(--cor-rental-off-white);
+    text-decoration: none;
+    font-family: 'Manrope', sans-serif;
+}
+
+.Merchan {
+    display: flex;
+    flex-direction: column;
+    background-color: #141111;
+}
+
+.Merchan img {
+    max-width: 100vw;
+    padding-top: 5rem;
+    position: static;
+}
+
+.textoMerchan {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 2rem 0 2rem;
+}
+
+.Unlock {
+    color: var(--cor-rental-off-white);
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+}
+
+.Contribute {
+    color: var(--cor-fonte-branca);
+    text-decoration: none;
+    font-family: 'Manrope', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 870px) and (max-width: 1500px) {
+    .efeitos {
+        display: flex;
+        justify-content: center;
+    }
+
+    .efeito1 {
+        width: 60vw;
+    }
+}
+
+@media screen and (min-width: 1501px) {
+
+    .efeitos {
+        display: flex;
+        justify-content: center;
+    }
+
+    .efeito1 {
+        width: 50vw;
+    }
+
+    .headerrental {
+        width: 145vw;
+    }
+
+    .Merchan {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .Merchan img {
+        max-width: 100vw;
+        width: 40vw;
+        display: flex;
+        justify-content: flex-end;
+    }
 }
