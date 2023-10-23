@@ -39,7 +39,7 @@
     color: var(--cor-fonte-rosa);
     font-weight: bold;
     padding: 0.1rem;
-    font-size: 15px;
+    font-size: 25px;
     margin-top: 2rem;
 }
 
@@ -192,18 +192,22 @@
     padding-bottom: 2rem;
     gap: 2rem;
     justify-content: center;
-    background-color: var(--cor-rental-off-white);
+    background-color: #f8f8f8;
     width: 100vw;
     align-items: center;
     border-radius: 50px 50px 0px 0;
 }
 
+.searchRental input {
+    width: 60vw;
+}
+
 .input-container {
-    width: 44vw;
+    width: 69vw;
 }
 
 .input-container input {
-    width: 35vw;
+    width: 60vw;
 }
 
 .input-group {
@@ -211,7 +215,8 @@
 }
 
 .user-label:nth-of-type(2) {
-    top: 3rem; /* Ajuste a posição vertical desejada */
+    top: 3rem;
+    /* Ajuste a posição vertical desejada */
 }
 
 .input {
@@ -227,7 +232,7 @@
 .user-label {
     position: absolute;
     left: 15px;
-    color: #e8e8e8;
+    color: #9f0707;
     pointer-events: none;
     transform: translateY(1rem);
     transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -246,19 +251,115 @@
 }
 
 
-.search-button{
-    padding: 1.5rem;
+.search-button {
+    padding: 1rem;
     border-radius: 110px;
+    width: 60vw;
 }
 
 .search-button:hover {
-    background-color: #F284EE;
-    transition: 1.5s;
-    padding: 1.7rem;
+    background-color: #000;
+    color: var(--cor-fonte-branca);
+    transition: 0.5s;
+}
+
+.rentalTypes {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    background-color: var(--cor-rental-off-white);
+    align-items: center;
+
+}
+
+.rentClass {
+    color: var(--cor-rental-header);
+    width: 90vw;
+    text-align: center;
+}
+
+.imgRental img {
+    width: 100vw;
+    height: 30vh;
+    border-radius: 50px 0px 0 50px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.rentalClass1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+}
+
+.rentClassification {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    width: 70vw;
+}
+
+.rentalMod {
+    background-color: rgb(132, 132, 132, 0.1);
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.rentalClass3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
 }
 
 
 
+
+.RentalBikes {
+    background-color: var(--cor-rental-off-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.RentalBikeName {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+}
+
+.rentalBikeClass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+}
+
+.rentBikesClassification {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    width: 70vw;
+    text-align: center;
+}
+
+.rentalClassbikes3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding-bottom: 2rem;
+}
+
+.rentalModBikes {
+    background-color: rgb(132, 132, 132, 0.1);
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.imgRentalBikes img {
+    width: 100vw;
+    border-radius: 50px 0px 0px 50px;
+}
 
 @media screen and (min-width: 760px) and (max-width: 1500px) {
     .efeitos {
@@ -306,13 +407,122 @@
         align-items: center;
         border-radius: 50px 50px 0px 0;
     }
-    
+
     .input-container {
         width: 22vw;
     }
-    
+
     .input-container input {
         width: 15vw;
+    }
+
+    .searchRental input {
+        width: 15vw;
+    }
+
+    .search-button {
+        width: 15vw;
+    }
+
+    .imgRental {
+        width: 50vw;
+    }
+
+    .imgRental img {
+        width: 50vw;
+        height: 40vw;
+    }
+
+    .rentClass {
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rentalTypes {
+        flex-direction: row;
+        padding-top: 1rem;
+    }
+
+    .rentalClass1 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 50px;
+    }
+
+    .rentClassification {
+        display: flex;
+        flex-direction: row;
+        padding: 0.5rem;
+        width: 50vw;
+        justify-content: center;
+    }
+
+    .rentalMod {
+        background-color: rgb(132, 132, 132, 0.1);
+        padding: 1rem;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .rentalClass3 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        padding-top: 1.5rem;
+        width: 40vw;
+    }
+
+
+
+
+
+
+    .RentalBikes {
+        background-color: var(--cor-rental-off-white);
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        padding-top: 1rem;
+    }
+
+    .RentalBikeName {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 50px;
+    }
+
+    .rentalBikeClass {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50vw;
+    }
+
+    .rentBikesClassification {
+        display: flex;
+        flex-direction: row;
+        padding: 0.5rem;
+        width: 50vw;
+        justify-content: center;
+    }
+
+    .rentalClassbikes3 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        padding-top: 1.5rem;
+        width: 40vw;
+    }
+
+    .rentalModBikes {
+        background-color: rgb(132, 132, 132, 0.1);
+        padding: 1rem;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+
+    .imgRentalBikes img {
+        width: 50vw;
+        border-radius: 50px 0px 0px 50px;
     }
 }
 
@@ -370,12 +580,124 @@
         align-items: center;
         border-radius: 50px 50px 0px 0;
     }
-    
+
     .input-container {
         width: 19vw;
     }
-    
+
     .input-container input {
         width: 15vw;
+    }
+
+
+    .searchRental input {
+        width: 15vw;
+    }
+
+    .search-button {
+        width: 15vw;
+    }
+
+    .imgRental {
+        width: 50vw;
+    }
+
+    .imgRental img {
+        width: 50vw;
+        height: 30vw;
+    }
+
+    .rentClass {
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rentalTypes {
+        flex-direction: row;
+        padding-top: 3rem;
+    }
+
+    .rentalClass1 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 60px;
+        padding-bottom: 1.5rem;
+    }
+
+    .rentClassification {
+        display: flex;
+        flex-direction: row;
+        padding: 0.5rem;
+        width: 50vw;
+        justify-content: center;
+    }
+
+    .rentalMod {
+        background-color: rgb(132, 132, 132, 0.1);
+        padding: 1.5rem;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 25px;
+    }
+
+    .rentalClass3 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+        padding-top: 1.5rem;
+        width: 40vw;
+    }
+
+
+
+
+
+    .RentalBikes {
+        background-color: var(--cor-rental-off-white);
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        padding-top: 10rem;
+    }
+
+    .RentalBikeName {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 50px;
+    }
+
+    .rentalBikeClass {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50vw;
+    }
+
+    .rentBikesClassification {
+        display: flex;
+        flex-direction: row;
+        padding: 0.5rem;
+        width: 50vw;
+        justify-content: center;
+    }
+
+    .rentalClassbikes3 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+        padding-top: 1.5rem;
+        width: 40vw;
+    }
+
+    .rentalModBikes {
+        background-color: rgb(132, 132, 132, 0.1);
+        padding: 1.5rem;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 25px;
+    }
+
+
+    .imgRentalBikes img {
+        width: 50vw;
+        border-radius: 0px 50px 50px 0px;
     }
 }
